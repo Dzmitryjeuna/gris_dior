@@ -50,6 +50,7 @@ body {
 
 .caption {
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -161,7 +162,7 @@ body {
 }
 
 .about {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -200,7 +201,7 @@ body {
 }
 
 .about__slider {
-  width: 1400px;
+  width: 1800px;
   padding-left: 200px;
   margin-left: -200px;
   padding-bottom: 20px;
@@ -216,4 +217,113 @@ body {
   text-align: center;
 }
 
+.accordion {
+margin-bottom: 225px;
+}
 
+.accordion__inner {
+  padding-left: 200px;
+}
+
+.accordion__item {
+  position: relative;
+  border-bottom: 1px solid var(--bl);
+  padding: 0 101px 20px 0;
+}
+
+.accordion__item--active .accordion__content {
+  display: block;
+}
+
+.accordion__item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  background-image: url(../img/arrow-bottom.svg);
+  right: 85px;
+  top: 50px;
+}
+
+.accordion__item:last-child::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/accordion-img.jpg);
+  width: 65px;
+  height: 120px;
+  bottom: -73px;
+  left: 268px;
+}
+
+.accordion__triger {
+  cursor: pointer;
+  padding-top: 50px;
+}
+
+.accordion__triger-caption {
+  flex-basis: 300px;
+}
+
+.accordion__triger-text {
+  flex-basis: 387px;
+  margin-right: 104px;
+  min-height: 51px;
+}
+
+.accordion__content {
+  padding-top: 20px;
+  display: none;
+}
+
+.accordion__content p {
+  margin-bottom: 10px;
+}
+
+.else {
+  margin-bottom: 150px;
+}
+
+.else__inner {
+ position: relative;
+ min-height: 647px;
+}
+
+.else__subtitle {
+  width: 96px;
+}
+
+.else__items {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  gap: 20px;
+}
+
+.else__item {
+  text-align: center;
+}
+
+.else__item-step {
+color: rgba(0, 0, 0, 0.50);
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.else__item-img {
+  margin-bottom: 20px;
+}
+
+.else__item-name {
+margin-bottom: 10px;
+}
+
+.else__item-name span {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.else__item-price {
+  font-family: var(--playfair), sans-serif;
+}
